@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "8281cc7a-bd17-4b9b-833e-f7b497d590b2",
+		"name": "Comment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20077184"
+	},
+	"item": [
+		{
+			"name": "Get Comment By Thread ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTY2ODQ5MzksInJvbGUiOiJVc2VyIiwidXNlcklkIjo3fQ.JNTyDl80FI0UHvLORWFjS4EWcffGaovt3pKym3Po3t8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/threads/1/comments",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"threads",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment (Not Yet)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTc4MTI1NzQsInJvbGUiOiJVc2VyIiwidXNlcklkIjo1fQ.FPE86crUYs4qfkz2Kf6a8sj-e5hg42YZGMBrZWk2wbE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/threads/1/comments/1",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"threads",
+						"1",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTc4MTI4NzMsInJvbGUiOiJVc2VyIiwidXNlcklkIjo1fQ.z02TBT1aUqdZK6BgV8FL1ZOm6ZiPRqIcurz3p79U1mI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reportCategoryID\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/threads/1/comments/1/reports",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"threads",
+						"1",
+						"comments",
+						"1",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"this thread sucks but i have to do it\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/threads/1/comments",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"threads",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/threads/{threadID}/comments/{commentID}/likes",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"threads",
+						"{threadID}",
+						"comments",
+						"{commentID}",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTc4MTA1NjksInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.KIE6q_aCwBgNDTF1qx3xnKfuG7deC8tsTM3Xq7V5_sU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/threads/1/comments/1",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"threads",
+						"1",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

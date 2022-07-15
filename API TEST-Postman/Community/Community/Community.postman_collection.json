@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "bd334def-b544-4f91-96c1-5091b06686c7",
+		"name": "Community",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20077184"
+	},
+	"item": [
+		{
+			"name": "Get All Community",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Community",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/1",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Community Thread",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communitites/1/threads",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communitites",
+						"1",
+						"threads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Community About",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/1/about",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"1",
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Community",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sport\",\r\n  \"description\": \"anyKindOfSport\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Moderator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDIxMDgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.28XZouV7kNBL2mlJ_pxYA45SN-MdIkeqJmMPSh6Wz70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\r\n\r\n{\r\n  \"userID\": 3,\r\n  \"communityID\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/community-moderators",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"community-moderators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report Community",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTc4Nzg5MzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo1fQ.3p7lN_m0qFWN2xiPterqCSbnmIPGMVjUxAMepEA6tIw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"reportCategoryID\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/:communityID/reports",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						":communityID",
+						"reports"
+					],
+					"variable": [
+						{
+							"key": "communityID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Community",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\r\n\r\n{\r\n  \"name\": \"SPOOORT\",\r\n  \"description\": \"SPORTSPORTSPORTSPORT!!!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/2",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Community Image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDI0MDIsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.K4X_P9X_oRhvHJpT5zt0DiNvE22kxwQ3McqjHqzHot8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "communityImage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/wee.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/2/images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"2",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Community Background Image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDI0MDIsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.K4X_P9X_oRhvHJpT5zt0DiNvE22kxwQ3McqjHqzHot8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "communitybackgroundimage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/woo.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/2/background-images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"2",
+						"background-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Community",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDEyMTgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.bkygLsUD3nJE3YrgRuz3X5jLiqcT2bz8sn0XbXaEd_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/communities/1",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"communities",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Moderator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTczMDIxMDgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6MX0.28XZouV7kNBL2mlJ_pxYA45SN-MdIkeqJmMPSh6Wz70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userID\": 3,\r\n  \"communityID\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/community-moderators",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"community-moderators"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

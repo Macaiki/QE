@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "a71a573f-9afc-488a-9457-bdc12e148d36",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20077184"
+	},
+	"item": [
+		{
+			"name": "Get Reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dashboard Analytics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/analytics",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"analytics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reported Threads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/threads/{threadID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"threads",
+						"{threadID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reported Community",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/communities/{communityID}\n",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"communities",
+						"{communityID}\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reported Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/comments/{commentID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"comments",
+						"{commentID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reported User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/users/{userID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"users",
+						"{userID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Thread Report",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/threads/{threadID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"threads",
+						"{threadID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Community Report",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/threads/{threadID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"threads",
+						"{threadID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment Report",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/comments/{commentID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"comments",
+						"{commentID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Report",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/reports/users/{userID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"reports",
+						"users",
+						"{userID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ban Thread",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/ban/threads/{threadID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"ban",
+						"threads",
+						"{threadID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ban Community",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/ban/communities/{communityID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"ban",
+						"communities",
+						"{communityID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ban Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/ban/comments/{commentID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"ban",
+						"comments",
+						"{commentID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ban User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/admin/ban/users/{userID}",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"ban",
+						"users",
+						"{userID}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

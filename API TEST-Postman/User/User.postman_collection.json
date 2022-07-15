@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "1d8e6850-2429-45cb-8c75-435003140969",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20077184"
+	},
+	"item": [
+		{
+			"name": "Get All User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users?search",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User (Postive)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/4",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User (Negative)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/100",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Following By User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/2/following",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2",
+						"following"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Followers By User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/2/followers",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2",
+						"followers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Thread By User ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Thread By Token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Verify OTP",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reports (Admin)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dashboard Analytics (Admin)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Register (Positive)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user8@gmail.com\",\r\n  \"username\": \"user8\",\r\n  \"password\": \"123456\",\r\n  \"passwordConfirmation\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register (Negative)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"yeyey@gmail.com\",\r\n  \"username\": \"nurul\",\r\n  \"password\": \"123456\",\r\n  \"passwordConfirmation\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login (Positive)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user8@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login (Negative)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"unregistered@gmail.com\",\r\n  \"password\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send OTP (Negative Test)",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By Token (self) (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"123456\",\r\n  \"bio\": \"Lorem ipsum\",\r\n  \"profession\": \"Front-end\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By Token (self) (Negative)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"123456\",\r\n  \"bio\": \"Lorem ipsum\",\r\n  \"profession\": \"Front-end\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Profile Image (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/wee.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile-images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Profile Image (Negative)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/waa.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile-images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Background Image (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "backgroundImage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/wee.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/background-images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"background-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Background Image (Negative)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "backgroundImage",
+							"type": "file",
+							"src": "/C:/Users/Faiz/Downloads/waa.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/background-images",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"background-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Email (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNjU1ODEsInJvbGUiOiJVc2VyIiwidXNlcklkIjoyfQ.HpNFMNH9YnK3dQlkZzb4KI-VQEZZyFJ5JJWhXPqU7P8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user1new@gmail.com\",\r\n  \"password\": \"1234567\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/email",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Email (Negative)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNjU1ODEsInJvbGUiOiJVc2VyIiwidXNlcklkIjoyfQ.HpNFMNH9YnK3dQlkZzb4KI-VQEZZyFJ5JJWhXPqU7P8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user1new@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/email",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNjUxOTUsInJvbGUiOiJVc2VyIiwidXNlcklkIjoyfQ.YUld1PiPRCpXPcJZGoZ9OQyUdK93-2MPdJJgJ6Whn-c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"1234567\",\r\n  \"passwordConfirmation\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/password",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password (Negative)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNjU1ODEsInJvbGUiOiJVc2VyIiwidXNlcklkIjoyfQ.HpNFMNH9YnK3dQlkZzb4KI-VQEZZyFJ5JJWhXPqU7P8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"1234567\",\r\n  \"passwordConfirmation\": \"123457\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/password",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By Token (self) (Positive) pending",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyNzAzMzIsInJvbGUiOiJVc2VyIiwidXNlcklkIjo0fQ.lB4_TxiJbPa_mGz4_TX3iBdGzMlGOi8anL91JzxjcaE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/curent-user/profile",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"curent-user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By Token (self) (Negative) pending",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/3",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User (Admin) (Positive)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTcyODUxMjgsInJvbGUiOiJBZG1pbiIsInVzZXJJZCI6Nn0.yqrB5Maxf0OFDxxzX3Hef2LsmCukD7tP0G_KUkPefX4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://108.136.47.34:8080/api/v1/users/2",
+					"protocol": "http",
+					"host": [
+						"108",
+						"136",
+						"47",
+						"34"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User (Admin) (Negative)",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
